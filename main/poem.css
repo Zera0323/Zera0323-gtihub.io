@@ -1,0 +1,46 @@
+body{
+  color:#faf8ef
+}
+h1 {
+   font-family: Helvetica, Geneva, Arial,
+         SunSans-Regular, sans-serif;
+    color: #555;
+    margin-left: 100px;
+    margin-top: 5px;
+   }
+h2{
+  color: #555;
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+label{
+  color: #555;
+  margin-left: 100px;
+  margin-top: 60px;
+  font-size: 15px;
+}
+i{
+  font-family: "Arvo", Helvetica, sans-serif;
+  font-family: 12px;
+  color:#555;
+  margin-left: 100px;
+}
+
+button{
+  width:200px;
+  height:50px;
+  margin-left: 100px;
+  margin-top: 30px;
+  background-color: inherit;
+  font-family: "Arvo", Helvetica, sans-serif;
+  font-family: 12px;
+}
+.decoration{
+  width:25px;
+  height:100px;
+  background: #555;
+  margin-top: -100px;
+  margin-left: -10px;
+}
