@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>代娟的个人网站</title>
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-p1KAotb3W9ndluCsqePPYnjRm3c6abdnIjo0tQwYUv83VsbsYd43RuofnFAaDo0E" crossorigin="anonymous">-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="suppliment.css">
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-primary">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="#">
+      <img src=".\img\apple-touch-icon.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+        Dai Juan
+    </a>
+  </div>
+</nav>
+<!-- Navigation -->
+<div class=navigation>
+  <div class="container-md " style="margin:2rem;">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">首页</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    个人作品
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="seasons.html">四季</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="flowers.html">花卉</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="animals.html">动物</a></li>
+                  </ul>
+                </li>
+
+
+            <a class="nav-link"  href="homepage-about.html">关于我
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<p> </p>
+<!-- Card -->
+
+
+<div class= Card>
+  <div class="container-md" >
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+      <div class="rowli">
+        <div class="box">
+          <img src=".\img\flowers\A2.jpg" alt="">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">郁金香</span>
+              <h3 class="title">花卉</h3>
+            </div>
+            <ul class="icon">
+              <li><a href="flowers.html"><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src=".\img\animals\Snail.jpg" alt="">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">蜗牛</span>
+              <h3 class="title">动物</h3>
+            </div>
+            <ul class="icon">
+              <li><a href="animals.html"><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src=".\img\seasons\SM\x.jpg" alt="">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">薰衣草</span>
+              <h3 class="title">四季</h3>
+            </div>
+            <ul class="icon">
+              <li><a href="https://www.instagram.com/p/CbjrRJ8JQLP/"><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+<p></p>
+
+<!--footer-->
+<div class='footer bg-body-tertiary'>
+      <p></p>
+      <!-- <span id="star-five" class="scroll"></span> -->
+      <el-divider></el-divider>
+      <span>以上均为个人摄影作品</span>
+      <br/>
+      <el-divider direction="vertical"></el-divider>
+      <span>如有问题</span>
+      <br/>
+      <el-divider direction="vertical"></el-divider>
+      <span @click="drawer = true">联系我</span>
+      <br/>
+
+
+      <el-drawer
+        title="联系我"
+        :visible.sync="drawer"
+        :direction="direction"
+        :before-close="handleClose">
+        <p class='info'>
+          <i class="el-icon-phone"></i>微信：wxid_h267tzgybsmy12
+
+        </p>
+      </el-drawer>
+  </div>
+
+
+
+    </body>
+  </html>
